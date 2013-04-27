@@ -65,6 +65,7 @@ public class Percolation {
 		return isOpen(i, j) && filled.connected(0, to1DIndex(i, j));
 	}
 
+	
 	public boolean percolates() {
 		return percolated.connected(0, N * N + 1);
 	}
